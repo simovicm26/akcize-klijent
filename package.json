@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@lottiefiles/lottie-interactivity": "^1.6.1",
     "gsap": "^3.11.4",
     "lottie-web": "^5.10.1",
     "next": "13.0.4",
