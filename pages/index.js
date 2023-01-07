@@ -4,7 +4,7 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import NavBar from "../components/nav/NavBar";
 import HeroSection from "../components/heroSection/HeroSection";
-import ProblemSection from "../components/ProblemSection/ProblemSection";
+import ProblemSection from "../components/problemSection/ProblemSection";
 import MidTextSection from "../components/UI/MidTextSection";
 import MyNameSection from "../components/myNameSection/MyNameSection";
 import ZastojaSection from "../components/zastojaSection/ZastojaSection";
