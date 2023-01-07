@@ -9,7 +9,7 @@ import MidTextSection from "../components/UI/MidTextSection";
 import MyNameSection from "../components/myNameSection/MyNameSection";
 import ZastojaSection from "../components/zastojaSection/ZastojaSection";
 import MojeUslugeSection from "../components/mojeUslugeSection/MojeUslugeSection";
-import FormaSection from "../components/formaSection/formaSection";
+import FormaSection from "../components/formaSection/FormaSection";
 import Logo from "../public/AkcizeLogo.svg";
 import Link from "next/link";
 
