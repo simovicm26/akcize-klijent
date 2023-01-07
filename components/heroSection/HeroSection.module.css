@@ -1,0 +1,225 @@
+.HeroSection{
+    display: flex;
+    width: 100%;
+    padding: 0 100px;
+    margin: 150px 0;
+    justify-content: center;
+    margin-top: 250px;
+}
+
+.HeroSection h1{
+    color: #353535;
+    font-size: 56px;
+    font-weight: 500;
+    margin: 0;
+    max-width: 450px;
+    background-color: white;
+}
+
+.animationH1{
+    /* transform: translateY(100%); */
+    opacity: 0;
+    transition: all ease-in 0.3s;
+}
+.loadedH1{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.animationButton{
+    /* transform: translateY(250%); */
+    opacity: 0;
+    transition-property: opacity,transform;
+    transition-timing-function:  ease-in ;
+    transition-duration: 0.3s;
+    transition-delay: 0.2s;
+}
+
+
+.loadedButton{
+    /* transform: translateY(0); */
+    opacity: 1;
+}
+
+.HeroSection span{
+    font-size: 200px;
+    line-height: 1;
+    padding: 5px 0;
+    color:#FF5151;
+    opacity: 0;
+    transition:all ease-in 0.3s 0.2s;
+}
+
+.loadedH1 span{
+    opacity: 1;
+}
+
+
+
+.ContentContainer{
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.ImagesContainer{
+width: 50%;
+position: relative;
+}
+
+.MainImage{ 
+    overflow: hidden;
+}
+
+.MainImage img{
+ object-fit: cover;
+ border-radius:23px;
+ width: 100%;
+ height: 100%;
+}
+
+.TruckImage{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+
+    bottom: -100px;
+    left:-150px;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0px 4px 13px -1px rgba(0, 0, 0, 0.3);
+    transform: translateY(50%);
+    opacity: 0;
+    transition: all ease 0.5s 0.3s;
+}
+
+.TruckImage img{
+    width: 300px;
+    height: 300px;
+}
+.PumpImage img{
+    width: 300px;
+    height: 300px;
+}
+
+.PumpImage{
+    position: absolute;
+    top: -100px;
+    right:-50px;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0px 4px 13px -1px rgba(0, 0, 0, 0.3);
+    transform: translateY(50%);
+    opacity: 0;
+    transition: all ease 0.5s 0.4s;
+}
+
+.loaded{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+
+@media (max-width: 1600px){
+
+    .HeroSection{
+        margin: 175px 0;
+    }
+
+    .MainImage img{
+        width: 40vw;
+        height: auto;
+        min-height: 450px;
+    }
+
+    .TruckImage img,.PumpImage img{
+        width: 15vw;
+        height: auto;
+      
+    }
+
+    .PumpImage{
+        top: -60px;
+        right:-30px;
+        border-radius: 7%;
+    }
+
+
+    .TruckImage{
+        bottom: -35px;
+        left:-50px;
+        border-radius: 7%;
+    }
+
+    .HeroSection span{
+        font-size: 150px;
+        line-height: 0.7;
+        color:#FF5151;
+    }
+
+    
+}
+@media (max-width: 1200px){
+    .HeroSection h1{
+        font-size: 46px;
+    }
+    .HeroSection{
+        padding: 0 25px;
+        margin:150px 0;
+        margin-top: 200px;
+    }
+
+    
+.PumpImage{
+    right:10px;
+}
+
+}
+@media (max-width: 900px){
+    .HeroSection{
+        margin:200px 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .HeroSection h1{
+        text-align: center;
+    }
+
+    .ContentContainer, .ImagesContainer{
+        width: 100%;
+        align-items: center;
+    }
+    .HeroSection button{
+        width: 100%;
+        max-width: 35rem;
+    }
+    .MainImage img{
+        width: 100%;
+
+    }
+
+    .MainImage{
+        margin-top:50px;
+    }
+    
+    .PumpImage, .TruckImage{
+        display: none;
+    }
+}
+
+@media (max-width: 400px){
+    .HeroSection h1{
+        font-size: 40px;
+    }
+    .HeroSection{
+        padding: 0 10px;
+        margin:150px 0;
+    }
+
+    .HeroSection span{
+        font-size: 120px;
+    }
+}

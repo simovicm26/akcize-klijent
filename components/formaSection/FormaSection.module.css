@@ -1,0 +1,78 @@
+.FormaSection h2{
+    color:#FF5151;
+    font-size: 54px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.FormaSection p{
+    margin: 0;
+    max-width: 40rem;
+}
+
+.FormaSection{
+    max-width: 45rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 150px 0;
+}
+
+.FormaSection form{
+    max-width: 30rem;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.textarea{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.textarea label{
+    color:#353535;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.textarea textarea.isFilled{
+    border:2px solid #825b5b;
+    border-radius: 11px;
+    color: #353535;
+}   
+
+.textarea textarea{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 11px;
+    font-size: 18px;
+    border:1px solid #c1c1c1;
+    background-color: #FFF0F0;
+    color:#353535
+}
+
+.FormaSection button{
+    width: 100%;
+}
+
+.textarea textarea:focus{
+    border:2px solid #825b5b;
+    outline: none;
+    background-color: #e2f0ff;
+}
+
+@media(max-width: 600px){
+    .FormaSection{
+        padding:100px 20px;
+        width: 100%;
+    }
+    .FormaSection h2{
+        font-size: 40px;
+        /* text-align: center; */
+    }
+    .FormaSection button{
+        margin-top:15px;
+    }
+}

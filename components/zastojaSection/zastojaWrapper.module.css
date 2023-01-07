@@ -1,0 +1,51 @@
+.ZastoJaWrapper{
+    display: flex;
+    padding:175px 0;   
+    justify-content: space-between;
+    min-width: 1100px
+}
+
+.reverse{
+    flex-direction: row-reverse;
+}
+
+.lottie{
+    width: 400px;
+}
+
+@media(max-width: 1600px){
+    .ZastoJaWrapper{
+        min-width: 0;
+        justify-content: center;
+        width: 100%;
+        gap:150px
+    }
+}
+
+@media(max-width: 1000px){
+    .ZastoJaWrapper{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 0;
+        gap:0
+    }
+
+    .lottie{
+        transform: translateY(50%);
+        z-index: -1;
+    }
+}
+
+@media(max-width: 600px){
+    .ZastoJaWrapper{   
+         width:100%;
+         padding: 25px 0;
+        }
+
+        .lottie{
+            width: 80%;
+            transform: translateY(30%);
+        }   
+
+}

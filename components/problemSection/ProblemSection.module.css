@@ -1,0 +1,32 @@
+.ProblemSection{
+    display: flex;
+    width: 100%;
+    padding: 0 100px;
+    margin: 150px 0;
+    justify-content: center;
+    /* max-width: 1650px; */
+}
+
+@media (max-width: 1600px){
+    .ProblemSection{
+        padding: 75px;
+    }
+
+    .ProblemSection h1{
+        font-size: 24px;
+        font-size: 16px;  
+    }
+}
+
+@media(max-width: 1000px){
+  .ProblemSection{
+    padding: 25px;
+    margin: 50px 0;
+  }
+} 
+@media(max-width: 700px){
+    .ProblemSection{
+      padding: 10px;
+      margin: 50px 0;
+    }
+  }

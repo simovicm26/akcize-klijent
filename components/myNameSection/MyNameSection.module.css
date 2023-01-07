@@ -1,0 +1,82 @@
+.MyNameSection{
+    margin:150px 0;
+    display: flex;
+    align-items:flex-end;
+    padding: 0 100px;
+    width: 100%;
+    justify-content: center;
+}   
+
+.MyNameSection h2{
+    color:#FF5151;
+    margin: 0;
+    font-size: 56px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.MyNameSection p{
+    color:#353535;
+    margin: 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+.ContentSection{
+    max-width: 550px;
+    margin-right: 5vw;
+    margin-bottom: 100px;
+}
+
+.ImageContainer{
+    max-width: 600px;
+    max-height: 600px;
+}
+
+.ImageContainer img{
+    object-fit:contain;
+    max-width: 600px;
+    max-height: 600px;
+}
+
+@media (max-width: 1400px){
+    .ContentSection{
+        margin-right:0;
+    }
+    .MyNameSection{
+        padding: 0 75px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .MyNameSection p, .MyNameSection h2{
+        text-align: center;
+    }
+}
+
+@media (max-width: 1000px){
+    .MyNameSection{
+        padding: 25px;
+    }
+    .ImageContainer, .ImageContainer img{
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px){
+    .MyNameSection{
+        padding: 10px;
+        margin-bottom: 0;
+    }
+
+    .MyNameSection h2{
+        font-size:40px;
+    }
+    .ContentSection{
+        margin-bottom: 0;
+    }
+    .ImageContainer img{
+        object-fit:contain;
+        max-height: 400px;
+    }
+}

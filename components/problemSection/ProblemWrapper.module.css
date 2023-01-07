@@ -1,0 +1,138 @@
+.ProblemWrapper{
+    background-color: #FF5151;
+    display: flex;
+    padding: 30px;
+    border-radius: 34px;
+    width: 100%;
+}
+
+.ImageContainer{
+    width: 50%;
+    border-radius: 17px;
+    overflow:hidden;
+    max-width: 700px;
+    /* margin-right:250px; */
+}
+
+.ContentContainer{
+    width: 50%;
+    color: white;
+    /* max-width: 30rem; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end
+}
+
+.ContentContainer h2{
+    font-weight: 500;
+    font-size: 32px;
+    padding: 0;
+    margin: 0;
+    width: 35rem;
+    text-align: left;
+}
+
+.ContentContainer p{
+    font-size:18px;
+    padding: 0;
+    margin-top:55px;
+    width: 35rem;
+    text-align: left;
+}
+
+
+.ImageContainer img{
+        object-fit: cover;
+        object-position: top;
+        max-width: 100%;
+        max-height: 600px;
+}
+
+.TextHolder{
+    position: relative;
+}
+
+.TextHolder img{
+    position: absolute;
+    left:-35px;
+}
+
+@media (max-width: 1600px){
+    .ImageContainer img{
+        height: 40vw;
+        width:  40vw;
+        border-radius: 23px;
+    }
+
+    .ContentContainer p{
+        width: auto;
+        margin-left: 30px;
+    }
+    .ContentContainer h2{
+        width: auto;
+        margin-left: 30px;
+    }
+
+    .TextHolder img{
+        left:-5px;
+    }
+}
+
+@media(max-width:1200px){
+    .ProblemWrapper{
+        flex-direction: column-reverse;
+    }
+
+    .ImageContainer{
+        width: 100%;
+        max-width: none;
+    }
+
+    .ImageContainer img{
+        height: auto;
+        width: 100%;
+        max-height: none;
+    }
+
+    .ContentContainer{
+        height: auto;
+        width: 100%;
+        align-items: center;
+        padding: 25px 0;
+    }
+
+    .ContentContainer h2{
+        text-align: center;
+    }
+
+    .ContentContainer h2, .ContentContainer p{
+        margin-left: 0;
+        
+    }
+
+    .TextHolder img{
+        left:-35px;
+    }
+}
+
+@media(max-width: 1000px){
+    .ContentContainer p{
+        margin-left: 35px;
+    }
+
+    .TextHolder img{
+        left: -5px;
+    }
+}
+
+@media(max-width: 700px){
+    .ProblemWrapper{
+      padding: 20px;
+    }
+    .ContentContainer h2{
+        margin-left:0;
+    }
+
+  }

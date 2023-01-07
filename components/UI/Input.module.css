@@ -1,0 +1,35 @@
+.input{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.input label{
+    margin-bottom: 5px;
+    font-size: 18px;
+    color:#353535;
+}
+
+.input input{
+    font-size: 18px;
+    padding:10px;
+    border-radius: 11px;
+    border:1px solid #c1c1c1;
+    background-color: #FFF0F0;
+    color:#353535;
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+
+.input .isFilled{
+    border:2px solid #825b5b;
+    border-radius: 11px;
+    color: #353535;
+}
+
+
+.input input:focus{
+    border:2px solid #825b5b;
+    outline: none;
+    background-color: #e2f0ff;
+}

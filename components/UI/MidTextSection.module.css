@@ -1,0 +1,51 @@
+.MidTextSection{
+    width: 100%;
+    padding: 0 100px;
+    margin: 150px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    max-width: 60rem;
+}
+
+.MidTextSection h2{
+    color:#FF5151;
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 56px;
+    font-weight: 500;
+}
+
+.MidTextSection p{
+    color:#353535;
+    margin: 0;
+    font-size: 18px;
+    max-width: 40rem;
+}
+
+@media (max-width: 1600px){
+    .MidTextSection{
+        padding: 75px;
+    }
+
+    .MidTextSection h1{
+        font-size: 24px;
+    }
+}
+
+@media(max-width: 1000px){
+  .MidTextSection{
+    padding: 10px;
+    margin:100px 0;
+  }
+  /* .MidTextSection h2{
+    font-size: 40px;
+  }  */
+}
+
+@media(max-width: 600px){
+  .MidTextSection h2{
+    font-size: 40px;
+  } 
+}

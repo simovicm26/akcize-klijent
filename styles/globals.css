@@ -1,15 +1,78 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat';
+  src: url('./../public/Montserrat-Regular.ttf');
+  src: url('./../public/Montserrat-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat';
+  src: url('./../public/Montserrat-Medium.ttf');
+  src: url('./../public/Montserrat-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat';
+  src: url('./../public/Montserrat-SemiBold.ttf');
+  src: url('./../public/Montserrat-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat';
+  src: url('./../public/Montserrat-Bold.ttf');
+  src: url('./../public/Montserrat-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat';
+  src: url('./../public/Montserrat-Light.ttf');
+  src: url('./../public/Montserrat-Light.ttf') format('truetype');
+  font-weight: 300;
+}
+
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family:'Montserrat';
+  font-weight: 500;
+  /* width: 100vw; */
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+  cursor: pointer;
 }
+
+main{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1920px;
+}
+
+p,h2{
+  text-align: center;
+}
+
+img{
+  display: block;
+}
+
 
 * {
   box-sizing: border-box;
@@ -24,3 +87,4 @@ a {
     background: black;
   }
 }
+

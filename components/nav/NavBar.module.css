@@ -1,0 +1,103 @@
+.NavBar{
+    background-color: #FF5151;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1920px;
+    padding:10px 100px;
+    width: 100%;
+    box-shadow: 0px 4px 13px -1px rgba(0, 0, 0, 0.3);
+    border-radius: 0 0 10px 10px;
+    position:fixed;
+    z-index: 100;
+    transform: translateY(-100%);
+    transition: all ease-in 0.2s 0.3s;
+}
+
+.NavLogo{
+    position: relative;
+    z-index: 1000;
+}
+
+.loadedNav{
+    transform: translateY(0);
+}
+
+.NavBar ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.NavBar li{
+    color: white;
+    margin-left: 50px;
+    border-radius: 10px;
+    padding: 10px 15px;
+}  
+
+.NavBar li:hover{
+    background-color: #b43737;
+}
+
+
+.NavBar button{
+    display: none;
+    background-color: transparent;
+    border: none;
+}
+
+.NavBar .disabled{
+    display: flex;
+}
+
+.closingMenu{
+    width: 45px;
+    height: 45px;
+}
+
+@media (max-width: 900px){
+    .NavBar{
+        padding: 10px 50px;
+    }
+}
+
+@media (max-width: 800px){
+    .NavBar button{
+        display: block;
+    }
+
+    .NavBar .disabled{
+        opacity: 0;
+        pointer-events: none    ;
+        transform: translateY(-100%);
+        transition: all ease 0.4s;
+    
+    }
+
+    .NavBar .animated{
+        transform: translateY(0);
+        transition: all ease 0.4s;
+    }
+
+    .NavBar ul{
+        position: fixed;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        padding: 0;
+        left: 0;
+        top:60px;
+        background-color: #FF5151;
+        padding-bottom: 50px;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0px 4px 13px -1px rgba(0, 0, 0, 0.3);
+    }
+    .NavBar li{
+        margin-top:70px;
+        padding: 0;
+        margin-left: 0;
+    }
+    .NavBar li:hover{
+        background-color: transparent;
+    }
+}

@@ -1,0 +1,31 @@
+.zastojaSection h2{
+    color:#FF5151;
+    font-size: 54px;
+    font-weight: 500;
+}
+
+.zastojaSection{
+    width: 100%;
+    padding: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+@media(max-width:1000px){
+    .zastojaSection h2{
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 600px){
+
+    .zastojaSection h2{
+        font-size: 40px;
+        margin-top: 100px;
+    }
+
+    .zastojaSection{
+        padding:75px 10px;
+    }
+ }
