@@ -5,7 +5,6 @@ import Logo from "../../public/AkcizeLogo.svg";
 import modules from "./NavBar.module.css";
 import Lottie from "lottie-web";
 import Animation from "../../public/close.json";
-import { create } from "@lottiefiles/lottie-interactivity";
 
 function NavBar({ handleScroll, handleScrollSecond }) {
   const [visable, setVisable] = useState(false);
