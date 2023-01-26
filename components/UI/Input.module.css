@@ -21,15 +21,9 @@
     font-weight: 500;
 }
 
-.input .isFilled{
-    border:2px solid #825b5b;
-    border-radius: 11px;
-    color: #353535;
-}
-
 
 .input input:focus{
-    border:2px solid #825b5b;
+    border:1px solid #97d5ff;
     outline: none;
-    background-color: #e2f0ff;
+    background-color: #eff7ff;
 }
