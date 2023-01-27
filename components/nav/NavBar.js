@@ -14,12 +14,12 @@ function NavBar({ handleScroll, handleScrollSecond }) {
 
   function handleUsluge() {
     handleScrollSecond();
-    setVisable(false);
+    handleClick();
   }
 
   function handleForm() {
     handleScroll();
-    setVisable(false);
+    handleClick();
   }
 
   function handleClick() {
@@ -59,7 +59,7 @@ function NavBar({ handleScroll, handleScrollSecond }) {
     >
       <Link
         className={modules.NavLogo}
-        onClick={() => setVisable(false)}
+        onClick={() => (visable ? handleClick() : null)}
         href="/"
       >
         <Image
