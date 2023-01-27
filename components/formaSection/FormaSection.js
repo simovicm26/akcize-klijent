@@ -21,9 +21,8 @@ const FormaSection = React.forwardRef((props, ref) => {
   const [isLoading, setIsLoading] = useState(false);
   const [isComplete, setIsComplete] = useState(false);
 
-  const [animation, setAnimation] = useState(null);
+  // const [animation, setAnimation] = useState(null);
   const container = useRef(null);
-  const container2 = useRef(null);
 
   function handleChange(e) {
     setInput(e.target.value);
@@ -54,13 +53,13 @@ const FormaSection = React.forwardRef((props, ref) => {
       poruka: input,
     };
 
-    animation.play();
     setIsLoading(true);
 
     emailjs
       .send("service_k4fzhnl", "contact_form", data, "PtDTzFowowY5pCYVm")
       .then(
         (result) => {
+          Lottie.destroy("loading");
           setIsComplete(true);
           console.log("success");
         },
@@ -72,20 +71,12 @@ const FormaSection = React.forwardRef((props, ref) => {
   }
 
   useEffect(() => {
-    setAnimation(
-      Lottie.loadAnimation({
-        container: container.current,
-        renderer: "svg",
-        animationData: Animation,
-        loop: true,
-        autoplay: true,
-      })
-    );
     Lottie.loadAnimation({
-      container: container2.current,
+      name: isComplete ? "success" : "loading",
+      container: container.current,
       renderer: "svg",
-      animationData: Animation2,
-      loop: false,
+      animationData: isComplete ? Animation2 : Animation,
+      loop: !isComplete,
       autoplay: true,
     });
   }, [isLoading, isComplete]);
@@ -99,22 +90,20 @@ const FormaSection = React.forwardRef((props, ref) => {
       </p>
       <div className={styles.contact}>
         <p>Kontakt telefon:</p>
-        <p href="">064 122 555 1</p>
+        <p>064 122 555 1</p>
         <p>Email adresa:</p>
-        <p href="">vladankasimovic1975@gmail.com</p>
+        <p>vladankasimovic1975@gmail.com</p>
       </div>
       {isLoading ? (
-        isComplete ? (
-          <div className={styles.success}>
-            <div className={styles.anim} ref={container2}></div>
+        <div className={styles.success}>
+          <div className={styles.anim} ref={container}></div>
+          {isComplete ? (
             <p>
               Hvala na poslatoj poruci. Kontaktiraću vas u najkraćem mogućem
               roku sa odgovorom na vaš zahtev!
             </p>
-          </div>
-        ) : (
-          <div ref={container}></div>
-        )
+          ) : null}
+        </div>
       ) : (
         <form onSubmit={handleSubmit}>
           <Input
@@ -157,6 +146,8 @@ const FormaSection = React.forwardRef((props, ref) => {
                 fontWeight: 500,
                 height: "100%",
                 border: "none",
+                width: "100%",
+                borderRadius: 11,
               }}
               buttonStyle={{
                 backgroundColor: "transparent",

@@ -137,7 +137,6 @@ position: relative;
     .TruckImage img,.PumpImage img{
         width: 15vw;
         height: auto;
-      
     }
 
     .PumpImage{
@@ -150,6 +149,8 @@ position: relative;
     .TruckImage{
         bottom: -35px;
         left:-50px;
+        width: auto;
+        height: auto;
         border-radius: 7%;
     }
 
